@@ -1,0 +1,33 @@
+<h3>Despesa Senador {{id}}</h3>
+
+<table>
+
+  <tr>
+    <th>Fornecedor</th>
+    <th>Valor</th>
+    <th>Dia</th>
+    <th>Mes</th>
+    <th>Ano</th>
+    <th>Tipo</th>
+  </tr>
+
+  <tr *ngFor="let desp of despesasSenador.despesas">
+    <td>{{desp.fornec}}</td>
+    <td>{{desp.valor}}</td>
+    <td>{{desp.dia}}</td>
+    <td>{{desp.mes}}</td>
+    <td>{{desp.ano}}</td>
+    <td>{{desp.tipo}}</td>
+  </tr>
+
+  <hr>
+  <tr>
+    <td></td>
+    <td>{{total}}</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+</table>

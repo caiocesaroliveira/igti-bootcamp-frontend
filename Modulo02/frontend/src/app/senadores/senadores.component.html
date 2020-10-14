@@ -1,0 +1,15 @@
+<h3>Senadores</h3>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Nome</th>
+  </tr>
+  <tr *ngFor="let senador of senadores">
+
+    <a (click)="detalharDespesas(senador.id)">
+      <td>{{senador.id}}</td>
+      <td>{{senador.nomeSenador}}</td>
+    </a>
+  </tr>
+</table>
